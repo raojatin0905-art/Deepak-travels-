@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak Travels | Innova Crysta & Travel Services</title>
+<meta name="description" content="Deepak Travels - Innova Crysta, airport pickup & drop, local and outstation travel services in Gurugram.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#102a43;background:#f7f9fc;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:#06284a;color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 15px #0002}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.5px}
+.logo-mark{width:50px;height:50px;border-radius:50%;background:#fbbd18;display:grid;place-items:center;color:#06284a;font-size:25px}
+.logo span{display:block;font-size:21px}.logo small{font-size:10px;color:#fbbd18;letter-spacing:2px}
+nav{display:flex;gap:24px;font-size:14px}nav a:hover{color:#fbbd18}
+.phone{background:#fbbd18;color:#06284a;padding:10px 14px;border-radius:25px;font-weight:800;font-size:13px}
+.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{background:linear-gradient(100deg,#06284a 0%,#0b4673 58%,#dbe9f3 100%);color:white;padding:70px 0 85px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:30px}
+.badge{color:#fbbd18;font-weight:800;letter-spacing:2px}
+h1{font-size:clamp(42px,6vw,76px);line-height:.98;margin:12px 0}.yellow{color:#fbbd18}
+.hero p{font-size:18px;max-width:570px;margin:18px 0 25px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:28px;font-weight:800;border:2px solid transparent}
+.btn.primary{background:#fbbd18;color:#06284a}.btn.secondary{border-color:#fff;color:#fff}
+.car-wrap{text-align:center}.car{font-size:170px;filter:drop-shadow(0 20px 18px #0005)}
+.car-caption{font-weight:800;background:#ffffff22;border:1px solid #ffffff33;padding:10px;border-radius:14px;display:inline-block}
+.quick{margin-top:-38px;position:relative;z-index:2}
+.quick-grid{display:grid;grid-template-columns:repeat(5,1fr);background:white;border-radius:18px;box-shadow:0 8px 30px #06284a25;overflow:hidden}
+.quick a{padding:22px 12px;text-align:center;border-right:1px solid #e6edf4;font-weight:800;font-size:14px}
+.quick a:last-child{border:0}.icon{font-size:25px;display:block;margin-bottom:5px}
+section{padding:70px 0}.title{text-align:center;margin-bottom:38px}.title h2{font-size:34px}.title p{color:#607d98;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 5px 20px #102a4312;border:1px solid #e8eef5}
+.card h3{margin:12px 0 7px}.card p{color:#627d98}.card .big{font-size:38px}
+.vehicle{background:#eaf3fa}.vehicle-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.vehicle-box{background:linear-gradient(145deg,#fff,#dfeef8);padding:35px;border-radius:25px;text-align:center}.vehicle-img{font-size:150px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.feature{background:#fff;padding:14px;border-radius:12px;font-weight:700}
+.destinations{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dest{height:150px;border-radius:18px;background:linear-gradient(135deg,#0b4673,#65a5cf);color:#fff;padding:20px;display:flex;align-items:end;font-size:21px;font-weight:900}
+.contact{background:#06284a;color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{background:#ffffff10;border:1px solid #ffffff20;border-radius:18px;padding:25px}.contact-card p{margin:10px 0;color:#dbe9f3}
+footer{background:#031a31;color:#c8d7e5;padding:25px 0;text-align:center;font-size:13px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 5px 20px #0004;z-index:30}
+@media(max-width:850px){
+nav,.phone{display:none}.menu{display:block}.hero-grid,.vehicle-grid,.contact-grid{grid-template-columns:1fr}
+.quick-grid{grid-template-columns:repeat(2,1fr)}.quick a:nth-child(2){border-right:0}.quick a{border-bottom:1px solid #e6edf4}
+.cards{grid-template-columns:1fr}.destinations{grid-template-columns:1fr 1fr}.hero{padding-top:45px}.car{font-size:120px}
+}
+@media(max-width:500px){.destinations{grid-template-columns:1fr}.features{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}.quick a{border-right:0}.logo span{font-size:18px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#home"><div class="logo-mark">🚗</div><div><span>DEEPAK</span><small>TRAVELS</small></div></a>
+<nav>
+<a href="#home">Home</a><a href="#services">Services</a><a href="#vehicle">Innova Crysta</a><a href="#tours">Tour Packages</a><a href="#contact">Contact</a>
+</nav>
+<a class="phone" href="tel:+919540011173">☎ 9540011173</a>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="badge">SAFE • COMFORTABLE • RELIABLE</div>
+<h1>DEEPAK<br><span class="yellow">TRAVELS</span></h1>
+<p>Your Journey, Our Priority. Premium <b>Innova Crysta</b> travel service for local, outstation and airport journeys.</p>
+<div class="buttons">
+<a class="btn primary" href="https://wa.me/919540011173?text=Hello%20Deepak%20Travels,%20I%20want%20to%20book%20a%20ride." target="_blank">Book on WhatsApp</a>
+<a class="btn secondary" href="tel:+919540011173">Call Now</a>
+</div>
+</div>
+<div class="car-wrap"><div class="car">🚙</div><div class="car-caption">Toyota Innova Crysta • Premium Travel</div></div>
+</div>
+</section>
+
+<div class="quick">
+<div class="container quick-grid">
+<a href="#contact"><span class="icon">🚙</span>Innova Crysta</a>
+<a href="#contact"><span class="icon">✈️</span>Airport Pickup & Drop</a>
+<a href="#contact"><span class="icon">📍</span>Outstation Trips</a>
+<a href="#tours"><span class="icon">🏝️</span>Tour Packages</a>
+<a href="#contact"><span class="icon">🏙️</span>Local City Ride</a>
+</div>
+</div>
+
+<section id="services">
+<div class="container">
+<div class="title"><h2>Our Services</h2><p>Travel comfortably with Deepak Travels.</p></div>
+<div class="cards">
+<div class="card"><div class="big">🚙</div><h3>Innova Crysta</h3><p>Premium, comfortable rides for family, business and long-distance journeys.</p></div>
+<div class="card"><div class="big">✈️</div><h3>Airport Pickup & Drop</h3><p>Convenient airport transfers from Gurugram and nearby areas.</p></div>
+<div class="card"><div class="big">🛣️</div><h3>Local & Outstation</h3><p>Book a comfortable vehicle for local rides or outstation trips.</p></div>
+</div>
+</div>
+</section>
+
+<section class="vehicle" id="vehicle">
+<div class="container vehicle-grid">
+<div class="vehicle-box"><div class="vehicle-img">🚙</div><h2>Toyota Innova Crysta</h2><p>Premium ride for your journey</p></div>
+<div><div class="title" style="text-align:left;margin-bottom:15px"><h2>Travel With Comfort</h2><p>Designed around a smooth and reliable travel experience.</p></div>
+<div class="features"><div class="feature">✓ Comfortable ride</div><div class="feature">✓ Professional service</div><div class="feature">✓ Local & outstation</div><div class="feature">✓ Easy WhatsApp booking</div></div></div>
+</div>
+</section>
+
+<section id="tours">
+<div class="container">
+<div class="title"><h2>Popular Tour Packages</h2><p>Ask us for a customized trip plan.</p></div>
+<div class="destinations"><div class="dest">🏔️ Himachal</div><div class="dest">🏞️ Uttarakhand</div><div class="dest">🏰 Rajasthan</div><div class="dest">🏖️ Goa</div></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="title"><h2>Book Your Journey</h2><p style="color:#c8d7e5">Call or WhatsApp us for availability and pricing.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>📞 Call / WhatsApp</h3><p>9540011173</p><p>9540851717</p><div class="buttons"><a class="btn primary" href="https://wa.me/919540011173?text=Hello%20Deepak%20Travels,%20I%20want%20to%20make%20a%20booking." target="_blank">WhatsApp</a><a class="btn secondary" href="tel:+919540011173">Call</a></div></div>
+<div class="contact-card"><h3>📍 Our Address</h3><p>Gurugram, Sector 53, Plot No. 1185</p><p>Near Paras Hospital, Near DLF Phase 5</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/919540011173?text=Hello%20Deepak%20Travels,%20I%20want%20to%20book%20a%20ride." target="_blank" aria-label="WhatsApp">☏</a>
+<footer>© 2026 Deepak Travels • Your Journey, Our Priority</footer>
+
+<script>
+function toggleMenu(){
+ const nav=document.querySelector('nav');
+ nav.style.display=nav.style.display==='flex'?'none':'flex';
+ nav.style.position='absolute';nav.style.top='76px';nav.style.left='0';nav.style.right='0';
+ nav.style.background='#06284a';nav.style.padding='20px';nav.style.flexDirection='column';
+}
+</script>
+</body>
+</html>
